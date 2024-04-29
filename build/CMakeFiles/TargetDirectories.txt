@@ -1,0 +1,3 @@
+/home/mastodonte/Repositories/vulkan-3d-viewer/build/CMakeFiles/vulkan-3d-viewer.dir
+/home/mastodonte/Repositories/vulkan-3d-viewer/build/CMakeFiles/edit_cache.dir
+/home/mastodonte/Repositories/vulkan-3d-viewer/build/CMakeFiles/rebuild_cache.dir

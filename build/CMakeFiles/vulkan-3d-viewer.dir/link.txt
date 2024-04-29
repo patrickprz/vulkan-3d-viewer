@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/vulkan-3d-viewer.dir/source/main.cpp.o -o vulkan-3d-viewer  /usr/local/lib/libglfw3.a /lib/libvulkan.so /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl 
