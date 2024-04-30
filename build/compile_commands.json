@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/mastodonte/Repositories/vulkan-3d-viewer/build",
+  "command": "/usr/bin/c++    -o CMakeFiles/vulkan-3d-viewer.dir/source/main.cpp.o -c /home/mastodonte/Repositories/vulkan-3d-viewer/source/main.cpp",
+  "file": "/home/mastodonte/Repositories/vulkan-3d-viewer/source/main.cpp"
+},
+{
+  "directory": "/home/mastodonte/Repositories/vulkan-3d-viewer/build",
+  "command": "/usr/bin/c++    -o CMakeFiles/vulkan-3d-viewer.dir/source/vulkan_helper.cpp.o -c /home/mastodonte/Repositories/vulkan-3d-viewer/source/vulkan_helper.cpp",
+  "file": "/home/mastodonte/Repositories/vulkan-3d-viewer/source/vulkan_helper.cpp"
+}
+]

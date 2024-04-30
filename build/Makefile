@@ -153,6 +153,30 @@ source/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vulkan-3d-viewer.dir/build.make CMakeFiles/vulkan-3d-viewer.dir/source/main.cpp.s
 .PHONY : source/main.cpp.s
 
+source/vulkanHandler.o: source/vulkanHandler.cpp.o
+.PHONY : source/vulkanHandler.o
+
+# target to build an object file
+source/vulkanHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vulkan-3d-viewer.dir/build.make CMakeFiles/vulkan-3d-viewer.dir/source/vulkanHandler.cpp.o
+.PHONY : source/vulkanHandler.cpp.o
+
+source/vulkanHandler.i: source/vulkanHandler.cpp.i
+.PHONY : source/vulkanHandler.i
+
+# target to preprocess a source file
+source/vulkanHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vulkan-3d-viewer.dir/build.make CMakeFiles/vulkan-3d-viewer.dir/source/vulkanHandler.cpp.i
+.PHONY : source/vulkanHandler.cpp.i
+
+source/vulkanHandler.s: source/vulkanHandler.cpp.s
+.PHONY : source/vulkanHandler.s
+
+# target to generate assembly for a file
+source/vulkanHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vulkan-3d-viewer.dir/build.make CMakeFiles/vulkan-3d-viewer.dir/source/vulkanHandler.cpp.s
+.PHONY : source/vulkanHandler.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"
+	@echo "... source/vulkanHandler.o"
+	@echo "... source/vulkanHandler.i"
+	@echo "... source/vulkanHandler.s"
 .PHONY : help
 
 

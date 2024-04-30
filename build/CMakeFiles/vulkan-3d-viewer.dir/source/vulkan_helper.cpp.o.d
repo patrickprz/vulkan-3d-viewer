@@ -1,6 +1,6 @@
-CMakeFiles/vulkan-3d-viewer.dir/source/main.cpp.o: \
- /home/mastodonte/Repositories/vulkan-3d-viewer/source/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
+CMakeFiles/vulkan-3d-viewer.dir/source/vulkan_helper.cpp.o: \
+ /home/mastodonte/Repositories/vulkan-3d-viewer/source/vulkan_helper.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/11/cstdint \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -11,17 +11,24 @@ CMakeFiles/vulkan-3d-viewer.dir/source/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/c++/11/pstl/pstl_config.h /usr/include/c++/11/ostream \
+ /usr/include/c++/11/pstl/pstl_config.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h /usr/include/c++/11/bits/postypes.h \
  /usr/include/c++/11/cwchar /usr/include/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -50,13 +57,7 @@ CMakeFiles/vulkan-3d-viewer.dir/source/main.cpp.o: \
  /usr/include/c++/11/debug/assertions.h \
  /usr/include/c++/11/bits/stl_iterator.h \
  /usr/include/c++/11/bits/ptr_traits.h /usr/include/c++/11/debug/debug.h \
- /usr/include/c++/11/bits/predefined_ops.h /usr/include/c++/11/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/c++/11/bits/predefined_ops.h \
  /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
  /usr/include/c++/11/clocale /usr/include/locale.h \
@@ -145,19 +146,12 @@ CMakeFiles/vulkan-3d-viewer.dir/source/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /home/mastodonte/Repositories/vulkan-3d-viewer/source/vulkanHandler.h \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/optional \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
- /usr/local/include/GLFW/glfw3.h /usr/include/GL/gl.h \
- /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
- /usr/include/vulkan/vulkan.h /usr/include/vulkan/vk_platform.h \
- /usr/include/vulkan/vulkan_core.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/vulkan/vulkan_core.h \
+ /usr/include/vulkan/vk_platform.h \
  /usr/include/vk_video/vulkan_video_codec_h264std.h \
  /usr/include/vk_video/vulkan_video_codecs_common.h \
  /usr/include/vk_video/vulkan_video_codec_h264std_encode.h \
@@ -170,4 +164,11 @@ CMakeFiles/vulkan-3d-viewer.dir/source/main.cpp.o: \
  /usr/include/vk_video/vulkan_video_codec_av1std.h \
  /usr/include/vk_video/vulkan_video_codec_av1std_decode.h \
  /usr/include/vk_video/vulkan_video_codec_av1std.h \
- /usr/include/vulkan/vulkan_core.h
+ /home/mastodonte/Repositories/vulkan-3d-viewer/source/vulkan_helper.h \
+ /usr/include/c++/11/optional /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/local/include/GLFW/glfw3.h /usr/include/GL/gl.h \
+ /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
+ /usr/include/vulkan/vulkan.h /usr/include/vulkan/vulkan_core.h
