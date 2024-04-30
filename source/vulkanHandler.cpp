@@ -20,6 +20,7 @@ void VulkanHandler::initWindow() {
 
 void VulkanHandler::initVulkan() {
     createInstance();
+    createSurface();
     pickPhysicalDevice();
     createLogicalDevice();
     std::cout << "log:VulkanHandler::initVulkan():finish" << std::endl;
@@ -151,3 +152,7 @@ std::vector<const char*> VulkanHandler::getRequiredExtensions() {
     return extensions;
 }
 
+void VulkanHandler::createSurface(){
+    std::cout << "log:VulkanHandler::createSurface():finish" << std::endl;
+
+}

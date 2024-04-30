@@ -27,6 +27,8 @@ private:
     VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
     VkDevice device;
 
+    VkSurfaceKHR surface;
+
     VkQueue graphicsQueue;
 
     void initWindow();
@@ -36,6 +38,8 @@ private:
     void mainLoop();
 
     void cleanup();
+
+    void createSurface();
 
     void createInstance();
 
