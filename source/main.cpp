@@ -1,6 +1,8 @@
 
+#define GLFW_INCLUDE_VULKAN
 #include <iostream>
 #include "vulkanHandler.h"
+
 
 int main() {
     VulkanHandler app;
@@ -11,6 +13,6 @@ int main() {
         std::cerr << e.what() << std::endl;
         return EXIT_FAILURE;
     }
-    std::cout << "log:EXIT_SUCCESS" << std::endl;
+
     return EXIT_SUCCESS;
 }

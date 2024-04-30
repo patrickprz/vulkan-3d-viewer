@@ -10,8 +10,11 @@ find_package(Vulkan REQUIRED)
 find_package(glfw3 3.4 REQUIRED)
 
 add_executable(${PROJECT_NAME} source/main.cpp
-                               source/vulkanHandler.cpp  
-                               source/vulkanHandler.h  
+                               source/VulkanHelpers/checkExtensions.h
+                               source/VulkanHelpers/checkValidationLayerSupport.h
+                               source/VulkanHelpers/isDeviceSuitable.h
+                               source/vulkanHandler.cpp
+                               source/vulkanHandler.h
                                )
 
 target_link_libraries(${PROJECT_NAME} glfw Vulkan::Vulkan)

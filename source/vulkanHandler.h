@@ -1,43 +1,48 @@
-#pragma once
-#include <cstdlib>
-#include <vector>
-#include <optional>
-#include <cstring>
 #include <GLFW/glfw3.h>
-#include <vulkan/vulkan.h>
-#include <vulkan/vulkan_core.h>
+#include <vector>
+#include <cstring>
+#include <cstdlib>
+#include "VulkanHelpers/checkValidationLayerSupport.h"
+#include "VulkanHelpers/isDeviceSuitable.h"
 
-class VulkanHandler{
-    public:
-        void run();
-    private:
-        const std::vector<const char*> validationLayers = {
-            "VK_LAYER_KHRONOS_validation"
-        };
+const uint32_t WIDTH = 800;
+const uint32_t HEIGHT = 600;
 
-        #ifdef NDEBUG
-            const bool enableValidationLayers = false;
-        #else
-            const bool enableValidationLayers = true;
-        #endif
+#ifdef NDEBUG
+const bool enableValidationLayers = false;
+#else
+const bool enableValidationLayers = true;
+#endif
 
+class VulkanHandler {
+public:
+    void run();
 
-        struct QueueFamilyIndices {
-            std::optional<uint32_t> graphicsFamily;
+private:
+    GLFWwindow* window;
 
-            bool isComplete(){
-                return graphicsFamily.has_value();
-            }
-        };
+    VkInstance instance;
+    VkDebugUtilsMessengerEXT debugMessenger;
 
-        GLFWwindow* window;
-        VkInstance instance;
-        VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
-        void initWindow();
-        void initVulkan();
-        void mainLoop();
-        void cleanup();
-        void createInstance();
-        void pickPhysicalDevice();
-        void createLogicalDevice();
+    VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
+    VkDevice device;
+
+    VkQueue graphicsQueue;
+
+    void initWindow();
+
+    void initVulkan();
+
+    void mainLoop();
+
+    void cleanup();
+
+    void createInstance();
+
+    void pickPhysicalDevice();
+
+    void createLogicalDevice();
+
+    std::vector<const char*> getRequiredExtensions();
+
 };
